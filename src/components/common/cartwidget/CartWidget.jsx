@@ -1,10 +1,12 @@
-import { BsFillCartPlusFill } from "react-icons/bs";
+import { AddShoppingCartIcon } from "@mui/icons-material/AddShoppingCart";
 
 const CartWidget = () => {
   return (
     <div>
-      <span>0</span>
-      <BsFillCartPlusFill />
+      <span>2</span>
+      <h1>
+        <AddShoppingCartIcon />
+      </h1>
     </div>
   );
 };

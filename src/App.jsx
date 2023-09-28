@@ -1,15 +1,19 @@
+import { ThemeProvider } from "@emotion/react";
 import { Navbar } from "./components/layout/navbar/Navbar";
 import { Home } from "./components/pages/home/Home";
-import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
+import { customTheme } from "./themeConfig";
+import PruebaLogin from "./components/pages/pruebaLogin/PruebaLogin";
+import Login from "./components/pages/login/Login";
 
 function App() {
-  let saludo = "Hola Boris! Como estas?";
-
   return (
     <div>
-      <Home />
-      <Navbar />
-      <ItemListContainer saludo={saludo} />
+      <ThemeProvider theme={customTheme}>
+        <Home />
+        <Navbar />
+        <Login />
+        <PruebaLogin />
+      </ThemeProvider>
     </div>
   );
 }
