@@ -1,13 +1,14 @@
 import { AddShoppingCartIcon } from "@mui/icons-material/AddShoppingCart";
+import { Box, Typography } from "@mui/material";
 
 const CartWidget = () => {
   return (
-    <div>
-      <span>2</span>
-      <h1>
+    <Box>
+      <Typography>2</Typography>
+      <Typography variant="h6">
         <AddShoppingCartIcon />
-      </h1>
-    </div>
+      </Typography>
+    </Box>
   );
 };
 

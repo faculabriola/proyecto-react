@@ -1,4 +1,5 @@
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import MenuIcon from "@mui/icons-material/Menu";
 import {
   AppBar,
   Box,
@@ -29,7 +30,10 @@ export const Navbar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Puma
           </Typography>
-          <Button color={"secondary"}>Login</Button>
+          <Button variant="contained" color={"secondary"}>
+            Login
+          </Button>
+          <MenuIcon />
           <AddShoppingCartIcon />
         </Toolbar>
       </AppBar>
