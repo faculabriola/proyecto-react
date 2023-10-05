@@ -1,14 +1,11 @@
-import { AddShoppingCartIcon } from "@mui/icons-material/AddShoppingCart";
-import { Box, Typography } from "@mui/material";
+import { Badge } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const CartWidget = () => {
   return (
-    <Box>
-      <Typography>2</Typography>
-      <Typography variant="h6">
-        <AddShoppingCartIcon />
-      </Typography>
-    </Box>
+    <Badge badgeContent={4} color="secondary">
+      <ShoppingCartIcon color="inherit" />
+    </Badge>
   );
 };
 

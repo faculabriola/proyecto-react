@@ -1,5 +1,5 @@
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import MenuIcon from "@mui/icons-material/Menu";
+
 import {
   AppBar,
   Box,
@@ -8,6 +8,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+import CartWidget from "../../common/cartwidget/CartWidget";
 
 export const Navbar = () => {
   return (
@@ -34,7 +35,7 @@ export const Navbar = () => {
             Login
           </Button>
           <MenuIcon />
-          <AddShoppingCartIcon />
+          <CartWidget />
         </Toolbar>
       </AppBar>
     </Box>

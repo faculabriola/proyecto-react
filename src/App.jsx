@@ -5,6 +5,7 @@ import { customTheme } from "./themeConfig";
 import { Box, Button } from "@mui/material";
 import CounterContainer from "./components/common/counter/CounterContainer";
 import { useState } from "react";
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
 
 function App() {
   const [montar, setMontar] = useState(false);
@@ -14,6 +15,7 @@ function App() {
       <ThemeProvider theme={customTheme}>
         <Home />
         <Navbar />
+        <ItemListContainer />
         <Button variant="contained" onClick={() => setMontar(!montar)}>
           Montar/Desmontar
         </Button>
