@@ -15,7 +15,7 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
       <Typography variant="h5" color={"primary"}>
         <h2>{productSelected.title}</h2>
       </Typography>
-      <Typography variant="body2">{productSelected.description}</Typography>
+      <Typography variant="body1">{productSelected.description}</Typography>
       <img
         style={{ width: 400 }}
         src="https://res.cloudinary.com/djnzf670x/image/upload/v1696440033/puma_magnify_nito_wwxxoy.avif"

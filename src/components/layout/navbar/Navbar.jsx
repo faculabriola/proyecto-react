@@ -13,7 +13,7 @@ import CartWidget from "../../common/cartwidget/CartWidget";
 export const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="fixed" sx={{ backgroundColor: "#1e1e1e" }}>
         <Toolbar>
           <IconButton
             size="large"
