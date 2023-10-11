@@ -5,7 +5,7 @@ export let products = [
     price: 100000,
     stock: 6,
     description: "Air Jordan Mid 1",
-    category: "Urban",
+    category: "urbanas",
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440016/air_jordan_1_mid_cdz9ay.webp",
   },
   {
@@ -14,7 +14,7 @@ export let products = [
     price: 70000,
     stock: 4,
     description: "Magnify Nitro",
-    category: "Deportivas",
+    category: "deportivas",
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440033/puma_magnify_nito_wwxxoy.avif",
   },
   {
@@ -23,7 +23,7 @@ export let products = [
     price: 80000,
     stock: 5,
     description: "Racer TR21",
-    category: "Deportivas",
+    category: "deportivas",
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440033/adidas_racer_tr21_esvyso.avif",
   },
   {
@@ -32,7 +32,7 @@ export let products = [
     price: 60000,
     stock: 7,
     description: "574",
-    category: "Urban",
+    category: "urbanas",
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
 ];

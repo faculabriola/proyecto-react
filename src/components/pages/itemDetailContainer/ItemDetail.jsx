@@ -11,12 +11,14 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
         alignContent: "center",
         alignItems: "center",
         paddingTop: "100px",
+        paddingBottom: "60px",
       }}
     >
-      <Typography variant="h5" color={"primary"}>
-        <h2>{productSelected.title}</h2>
+      <Typography variant="h2" color={"primary"}>
+        {productSelected.title}
       </Typography>
       <Typography variant="body1">{productSelected.description}</Typography>
+      <Typography variant="body1">${productSelected.price}</Typography>
       <img
         style={{ width: 400 }}
         src={productSelected.img}

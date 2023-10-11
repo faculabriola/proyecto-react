@@ -41,12 +41,12 @@ export const Navbar = () => {
                 justifyContent: "space-evenly",
               }}
             >
-              <Link to="/category/Urbanas">
+              <Link to="/category/urbanas">
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                   Urbanas
                 </Typography>
               </Link>
-              <Link to="/category/Deportivas">
+              <Link to="/category/deportivas">
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                   Deportivas
                 </Typography>
