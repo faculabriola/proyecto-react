@@ -6,9 +6,10 @@ const ItemList = ({ items }) => {
     <Box
       sx={{
         display: "flex",
-
+        img: "200px",
         justifyContent: "space-evenly",
         margin: "10px",
+        marginTop: "50px",
       }}
     >
       {items.map((item) => {

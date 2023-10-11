@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { products } from "../../../ProductsMock";
 import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = () => {
   const [items, setItems] = useState([]);
+  const { categoryName } = useParams();
+  console.log(categoryName);
 
   useEffect(() => {
     const tarea = new Promise((resolve) => {

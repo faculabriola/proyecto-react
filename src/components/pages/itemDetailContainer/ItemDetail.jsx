@@ -10,6 +10,7 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
         flexDirection: "column",
         alignContent: "center",
         alignItems: "center",
+        paddingTop: "100px",
       }}
     >
       <Typography variant="h5" color={"primary"}>
@@ -18,8 +19,8 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
       <Typography variant="body1">{productSelected.description}</Typography>
       <img
         style={{ width: 400 }}
-        src="https://res.cloudinary.com/djnzf670x/image/upload/v1696440033/puma_magnify_nito_wwxxoy.avif"
-        alt=""
+        src={productSelected.img}
+        alt="imagen de la zapatilla"
       />
       <CounterContainer stock={productSelected.stock} onAdd={onAdd} />
     </Box>
