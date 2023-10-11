@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   AppBar,
@@ -41,12 +41,18 @@ export const Navbar = () => {
                 justifyContent: "space-evenly",
               }}
             >
-              <Link to="/category/urbanas">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/category/urbanas"
+              >
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                   Urbanas
                 </Typography>
               </Link>
-              <Link to="/category/deportivas">
+              <Link
+                style={{ textDecoration: "none", color: "white" }}
+                to="/category/deportivas"
+              >
                 <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                   Deportivas
                 </Typography>
@@ -63,7 +69,6 @@ export const Navbar = () => {
           </Toolbar>
         </AppBar>
       </Box>
-      <Outlet />
     </>
   );
 };

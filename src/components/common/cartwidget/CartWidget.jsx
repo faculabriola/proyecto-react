@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const CartWidget = () => {
   return (
-    <Link to="/cart">
+    <Link style={{ color: "white" }} to="/cart">
       <Badge badgeContent={0} color="secondary" showZero>
         <ShoppingCartIcon color="inherit" />
       </Badge>

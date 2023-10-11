@@ -6,9 +6,15 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <Box>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      <Box sx={{ height: "10vh" }}>
+        <Navbar />
+      </Box>
+      <Box sx={{ minHeight: "80vh" }}>
+        <Outlet />
+      </Box>
+      <Box sx={{ height: "10vh" }}>
+        <Footer />
+      </Box>
     </Box>
   );
 };

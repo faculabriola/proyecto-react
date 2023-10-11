@@ -5,11 +5,10 @@ const ItemList = ({ items }) => {
   return (
     <Box
       sx={{
-        display: "flex",
         img: "200px",
+        display: "flex",
         justifyContent: "space-evenly",
-        margin: "10px",
-        marginTop: "50px",
+        textAlign: "center",
       }}
     >
       {items.map((item) => {

@@ -10,8 +10,6 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
         flexDirection: "column",
         alignContent: "center",
         alignItems: "center",
-        paddingTop: "100px",
-        paddingBottom: "60px",
       }}
     >
       <Typography variant="h2" color={"primary"}>
