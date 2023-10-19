@@ -1,13 +1,6 @@
 import { Link } from "react-router-dom";
 
-import {
-  AppBar,
-  Box,
-  Button,
-  IconButton,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import CartWidget from "../../common/cartwidget/CartWidget";
 
 export const Navbar = () => {
@@ -23,10 +16,11 @@ export const Navbar = () => {
           <Toolbar sx={{ display: "flex", justifyContent: "space-evenly" }}>
             <Link to={"/"}>
               <img
-                style={{ width: "60px" }}
+                style={{ width: "80px" }}
                 src="https://res.cloudinary.com/djnzf670x/image/upload/v1696987703/_e516f7d9-0da8-4adf-b19b-aefe361c5d10_nof6hh.jpg"
               />
             </Link>
+
             <IconButton
               size="large"
               edge="start"
@@ -60,10 +54,6 @@ export const Navbar = () => {
             </Box>
 
             <Box sx={{}}>
-              <Button variant="contained" color={"secondary"}>
-                Login
-              </Button>
-
               <CartWidget />
             </Box>
           </Toolbar>

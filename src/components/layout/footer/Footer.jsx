@@ -11,7 +11,9 @@ const Footer = () => {
           position: "revert",
         }}
       >
-        <Typography variant="body1">esto es el footer</Typography>
+        <Typography color={"white"} variant="h3">
+          Sneakers Import
+        </Typography>
       </Box>
     </>
   );

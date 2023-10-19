@@ -10,6 +10,8 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
         flexDirection: "column",
         alignContent: "center",
         alignItems: "center",
+        paddingTop: "50px",
+        paddingBottom: "50px",
       }}
     >
       <Typography variant="h2" color={"primary"}>
@@ -20,7 +22,7 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
       <img
         style={{ width: 400 }}
         src={productSelected.img}
-        alt="imagen de la zapatilla"
+        alt="Imagen del producto"
       />
       <CounterContainer stock={productSelected.stock} onAdd={onAdd} />
     </Box>
