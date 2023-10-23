@@ -17,7 +17,7 @@ export const ItemDetail = ({ productSelected, onAdd }) => {
       <Typography variant="h2" color={"primary"}>
         {productSelected.title}
       </Typography>
-      <Typography variant="body1">{productSelected.description}</Typography>
+      <Typography variant="body1">{productSelected.model}</Typography>
       <Typography variant="body1">${productSelected.price}</Typography>
       <img
         style={{ width: 400 }}
