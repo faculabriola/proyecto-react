@@ -6,16 +6,32 @@ const CartContextComponent = ({ children }) => {
   const addToCart = (product) => {
     let exist = isInCart(product.id);
     if (exist) {
-      console.log("ya estan en el carrito");
+      let newArr = cart.map((elemento) => {
+        if (elemento.id === product.id) {
+          return {
+            ...elemento,
+            quantity: product.quantity,
+          };
+        } else {
+          return elemento;
+        }
+      });
+      setCart(newArr);
     } else {
-      console.log("todavia no esta en carrito");
+      setCart([...cart, product]);
     }
-    setCart([...cart, product]);
   };
   const isInCart = (id) => {
     return cart.some((elemento) => elemento.id === id);
   };
-  let data = { cart, addToCart };
+  const getQuantityById = (id) => {
+    let product = cart.find((elemento) => elemento.id === id);
+    return product?.quantity;
+  };
+  const clearCart = () => {
+    setCart([]);
+  };
+  let data = { cart, addToCart, getQuantityById, clearCart };
 
   return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };

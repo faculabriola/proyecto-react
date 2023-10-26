@@ -5,7 +5,8 @@ export let products = [
     price: 100000,
     stock: 6,
     model: "Air Jordan Mid 1",
-    description: "",
+    description:
+      "Inspirada en el AJ1 original, esta edición de corte mid mantiene el look icónico que te encanta, y los colores selectos y el cuero impecable le dan una identidad distintiva.",
     category: "urbanas",
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440016/air_jordan_1_mid_cdz9ay.webp",
   },
