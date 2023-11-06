@@ -9,7 +9,6 @@ const ItemDetailContainer = () => {
   const { id } = useParams();
   const { addToCart, getQuantityById } = useContext(CartContext);
   let totalQuantity = getQuantityById(+id);
-  console.log(totalQuantity);
 
   useEffect(() => {
     let producto = products.find((product) => product.id === +id);
