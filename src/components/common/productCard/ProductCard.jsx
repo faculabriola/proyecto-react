@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const ProductCart = ({ item }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 170 }}>
       <CardMedia
         sx={{ height: 140 }}
         image={item.img}
@@ -22,9 +22,9 @@ const ProductCart = ({ item }) => {
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {item.model}
-          <Typography variant="body2" color="text.secondary">
-            ${item.price}
-          </Typography>
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          ${item.price}
         </Typography>
       </CardContent>
       <CardActions>

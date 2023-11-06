@@ -7,8 +7,11 @@ const ItemList = ({ items }) => {
       sx={{
         img: "200px",
         display: "flex",
-        justifyContent: "space-evenly",
+        gap: "20px",
+        flexWrap: "wrap",
+        justifyContent: "center",
         textAlign: "center",
+        paddingBottom: "50px",
       }}
     >
       {items.map((item) => {
