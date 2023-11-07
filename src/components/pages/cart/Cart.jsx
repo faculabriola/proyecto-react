@@ -2,11 +2,32 @@ import { Box, Button, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
 import { useContext } from "react";
+import Swal from "sweetalert2";
 
 const Cart = () => {
   const { cart, clearCart, deleteProductById, getTotalPrice } =
     useContext(CartContext);
   let total = getTotalPrice();
+  const clearCartAlert = () => {
+    Swal.fire({
+      title: "Seguro?",
+      text: "Eliminaras todos los productos del carrito!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Si, borrar!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        clearCart();
+        Swal.fire({
+          title: "Listo!",
+          text: "El carrito esta vacio!",
+          icon: "success",
+        });
+      }
+    });
+  };
   return (
     <Box sx={{ paddingTop: "50px" }}>
       <Typography variant="h1">ESTE ES EL CARRITO</Typography>
@@ -35,15 +56,23 @@ const Cart = () => {
           </Button>
         </Box>
       ))}
-      <Typography variant="h4">El total seria: {total}</Typography>
-      <Link to={"/checkout"}>
-        <Button variant="contained" color="secondary">
-          Finalizar comprar
-        </Button>
-      </Link>
-      <Button onClick={clearCart} variant="contained" color="secondary">
-        Vaciar carrito
-      </Button>
+      {cart.length > 0 && (
+        <Box sx={{ paddingBottom: "20px" }}>
+          <Typography variant="h4">El total seria: {total}</Typography>
+          <Link to={"/checkout"}>
+            <Button variant="contained" color="secondary">
+              Finalizar comprar
+            </Button>
+          </Link>
+          <Button
+            onClick={clearCartAlert}
+            variant="contained"
+            color="secondary"
+          >
+            Vaciar carrito
+          </Button>
+        </Box>
+      )}
     </Box>
   );
 };

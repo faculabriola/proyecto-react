@@ -10,7 +10,11 @@ import { Link } from "react-router-dom";
 
 const ProductCart = ({ item }) => {
   return (
-    <Card sx={{ maxWidth: 170 }}>
+    <Card
+      sx={{
+        maxWidth: 190,
+      }}
+    >
       <CardMedia
         sx={{ height: 140 }}
         image={item.img}

@@ -1,7 +1,13 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import CounterContainer from "../../common/counter/CounterContainer";
+import { Link } from "react-router-dom";
 
-export const ItemDetail = ({ productSelected, onAdd, initial }) => {
+export const ItemDetail = ({
+  productSelected,
+  onAdd,
+  initial,
+  showCounter,
+}) => {
   return (
     <Box
       sx={{
@@ -47,12 +53,22 @@ export const ItemDetail = ({ productSelected, onAdd, initial }) => {
         src={productSelected.img}
         alt="Imagen del producto"
       />
-      <CounterContainer
-        stock={productSelected.stock}
-        onAdd={onAdd}
-        initial={initial}
-      />
-      <Typography variant="h6">Tenes {initial} en el carrito</Typography>
+      {<Typography variant="h6">Tenes {initial} en el carrito</Typography>}
+      {showCounter ? (
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <CounterContainer
+            stock={productSelected.stock}
+            onAdd={onAdd}
+            initial={initial}
+          />
+        </Box>
+      ) : (
+        <Link to="/cart">
+          <Button color="secondary" variant="contained">
+            Finalizar compra
+          </Button>
+        </Link>
+      )}
     </Box>
   );
 };
