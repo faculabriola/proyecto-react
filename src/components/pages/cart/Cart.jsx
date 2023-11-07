@@ -1,8 +1,9 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, IconButton, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../../context/CartContext";
 import { useContext } from "react";
 import Swal from "sweetalert2";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const Cart = () => {
   const { cart, clearCart, deleteProductById, getTotalPrice } =
@@ -44,16 +45,21 @@ const Cart = () => {
         >
           <Typography variant="h4">{product.title}</Typography>
 
+          <Typography variant="h4">Modelo: {product.model}</Typography>
+
           <Typography variant="h4">Cantidad: {product.quantity}</Typography>
 
           <Typography variant="h4">Precio: {product.price}</Typography>
-          <Button
+          <IconButton onClick={() => deleteProductById(product.id)}>
+            <DeleteIcon sx={{ fontSize: "2rem" }} color="primary" />
+          </IconButton>
+          {/* <DeleteIcon
             onClick={() => deleteProductById(product.id)}
-            color="secondary"
+            color="primary"
             variant="contained"
           >
             Eliminar
-          </Button>
+          </DeleteIcon> */}
         </Box>
       ))}
       {cart.length > 0 && (

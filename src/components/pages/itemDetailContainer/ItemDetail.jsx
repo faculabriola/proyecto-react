@@ -53,7 +53,9 @@ export const ItemDetail = ({
         src={productSelected.img}
         alt="Imagen del producto"
       />
-      {<Typography variant="h6">Tenes {initial} en el carrito</Typography>}
+      {initial && (
+        <Typography variant="h6">Tenes {initial} en el carrito</Typography>
+      )}
       {showCounter ? (
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <CounterContainer
