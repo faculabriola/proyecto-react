@@ -2,8 +2,26 @@ import { Link } from "react-router-dom";
 
 import { AppBar, Box, IconButton, Toolbar, Typography } from "@mui/material";
 import CartWidget from "../../common/cartwidget/CartWidget";
+import { Category } from "@mui/icons-material";
 
 export const Navbar = () => {
+  let arr = [
+    {
+      id: 1,
+      name: "Todas",
+      path: "/",
+    },
+    {
+      id: 2,
+      name: "Urbanas",
+      path: "/category/urbanas",
+    },
+    {
+      id: 3,
+      name: "Deportivas",
+      path: "/category/deportivas",
+    },
+  ];
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -35,22 +53,22 @@ export const Navbar = () => {
                 justifyContent: "space-evenly",
               }}
             >
-              <Link
-                style={{ textDecoration: "none", color: "white" }}
-                to="/category/urbanas"
-              >
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                  Urbanas
+              {arr.map((category) => (
+                <Typography
+                  variant="h6"
+                  component="div"
+                  sx={{ flexGrow: 1 }}
+                  key={category.name}
+                >
+                  <Link
+                    style={{ textDecoration: "none", color: "white" }}
+                    key={category.id}
+                    to={category.path}
+                  >
+                    {category.name}
+                  </Link>
                 </Typography>
-              </Link>
-              <Link
-                style={{ textDecoration: "none", color: "white" }}
-                to="/category/deportivas"
-              >
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                  Deportivas
-                </Typography>
-              </Link>
+              ))}
             </Box>
 
             <Box sx={{}}>

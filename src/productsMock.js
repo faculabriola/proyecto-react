@@ -16,7 +16,8 @@ export let products = [
     price: 70000,
     stock: 4,
     model: "Magnify Nitro",
-    description: "",
+    description:
+      "Están fabricadas con una mediasuela con una pieza de espuma NITRO inyectada con nitrógeno y una capa de robusto PROFOAMLITE.",
     category: "deportivas",
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440033/puma_magnify_nito_wwxxoy.avif",
   },
