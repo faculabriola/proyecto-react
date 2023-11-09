@@ -45,6 +45,8 @@ const Cart = () => {
         >
           <Typography variant="h4">{product.title}</Typography>
 
+          <img style={{ height: "300px" }} src={product.img}></img>
+
           <Typography variant="h4">Modelo: {product.model}</Typography>
 
           <Typography variant="h4">Cantidad: {product.quantity}</Typography>

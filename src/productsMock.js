@@ -1,6 +1,5 @@
 export let products = [
   {
-    id: 1,
     title: "Nike",
     price: 100000,
     stock: 6,
@@ -11,7 +10,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440016/air_jordan_1_mid_cdz9ay.webp",
   },
   {
-    id: 2,
     title: "Puma",
     price: 70000,
     stock: 4,
@@ -22,7 +20,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440033/puma_magnify_nito_wwxxoy.avif",
   },
   {
-    id: 3,
     title: "Adidas",
     price: 80000,
     stock: 5,
@@ -32,7 +29,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440033/adidas_racer_tr21_esvyso.avif",
   },
   {
-    id: 4,
     title: "New Balance",
     price: 60000,
     stock: 7,
@@ -42,7 +38,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
   {
-    id: 5,
     title: "New Balance",
     price: 60000,
     stock: 7,
@@ -52,7 +47,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
   {
-    id: 6,
     title: "New Balance",
     price: 60000,
     stock: 7,
@@ -62,7 +56,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
   {
-    id: 7,
     title: "New Balance",
     price: 60000,
     stock: 7,
@@ -72,7 +65,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
   {
-    id: 8,
     title: "New Balance",
     price: 60000,
     stock: 7,
@@ -82,7 +74,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
   {
-    id: 9,
     title: "New Balance",
     price: 60000,
     stock: 7,
@@ -92,7 +83,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
   {
-    id: 10,
     title: "New Balance",
     price: 60000,
     stock: 7,
@@ -102,7 +92,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
   {
-    id: 11,
     title: "New Balance",
     price: 60000,
     stock: 7,
@@ -112,7 +101,6 @@ export let products = [
     img: "https://res.cloudinary.com/djnzf670x/image/upload/v1696440598/zapatillas-hombre-new-balance-574-ml574lgi-1_1_lrkt8j.jpg",
   },
   {
-    id: 12,
     title: "New Balance",
     price: 60000,
     stock: 7,

@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
   const [showCounter, setShowCounter] = useState(true);
   const { id } = useParams();
   const { addToCart, getQuantityById } = useContext(CartContext);
-  let totalQuantity = getQuantityById(+id);
+  let totalQuantity = getQuantityById(id);
 
   useEffect(() => {
     let itemCollection = collection(db, "products");

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import CardSkeleton from "../../common/cardSkeleton/CardSkeleton";
 import { getDocs, collection, query, where } from "firebase/firestore";
 import { db } from "../../../firebaseConfig";
@@ -30,6 +30,9 @@ const ItemListContainer = () => {
 
   return (
     <>
+      <Button variant="contained" color="secondary">
+        Rellenar
+      </Button>
       {items.length === 0 ? (
         <Box style={{ display: "flex", gap: 20 }}>
           <CardSkeleton />
